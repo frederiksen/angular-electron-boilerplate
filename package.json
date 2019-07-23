@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "./dist/main/electron-main.js",
   "scripts": {
+    "start": "electron .",
     "build:dev:renderer": "ng build --base-href ./",
     "build:prod:renderer": "ng build --base-href ./ --prod",
     "build:dev:main": "webpack --config ./src/main/webpack.js --mode development",
@@ -14,12 +15,11 @@
     "update:angular": "ng update @angular/cli @angular/core",
     "update:electron": "npm update electron electron-packager",
     "update:webpack": "npm update webpack webpack-cli",
-    "start": "electron .",
-    "ng": "ng",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test:test": "ng test",
+    "test:lint": "ng lint",
+    "test:e2e": "ng e2e",
+    "package": "electron-packager . electron-app --asar --overwrite --prune=true --ignore=\"/node_modules|/src|.map\" --out=release-builds",
+    "release": "npm run build:prod:all  && npm run package"
   },
   "private": true,
   "dependencies": {
