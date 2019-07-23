@@ -23,7 +23,7 @@ function createWindow() {
       // JavaScript context isolation for preload scripts
       contextIsolation: true,
       // Preload script
-//      preload: path.join(app.getAppPath(), 'dist/main', 'preload.js')
+      preload: path.join(app.getAppPath(), 'dist/main', 'preload.js')
     }
   });
 
@@ -34,6 +34,6 @@ function createWindow() {
   });
 }
 
-ipcMain.on('app.quit', (event, arg) => {
+ipcMain.on('app-quit', (event, arg) => {
   app.quit();
 });

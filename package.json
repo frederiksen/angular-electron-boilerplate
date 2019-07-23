@@ -9,6 +9,8 @@
     "build:prod:main": "webpack --config ./src/main/webpack.js --mode production",
     "build:dev:preload": "webpack --config ./src/preload/webpack.js --mode development",
     "build:prod:preload": "webpack --config ./src/preload/webpack.js --mode production",
+    "build:dev:all": "npm run build:dev:renderer && npm run build:dev:main && npm run build:dev:preload",
+    "build:prod:all": "npm run build:prod:renderer && npm run build:prod:main && npm run build:prod:preload",
 
     "start": "electron .",
 
