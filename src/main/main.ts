@@ -33,5 +33,7 @@ function createWindow() {
 }
 
 ipcMain.on('app-quit', (event, arg) => {
-  app.quit();
+//  app.quit();
+  win.webContents.send('test');
+
 });

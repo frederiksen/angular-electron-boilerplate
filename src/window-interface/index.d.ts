@@ -3,4 +3,5 @@ interface Window {
     electronIpcSendSync: (channel: string, ...args: any[]) => any;
     electronIpcOn: (channel: string, listener: (event: any, ...args: any[]) => void) => void;
     electronIpcRemoveListener: (channel: string, listener: (event: any, ...args: any[]) => void) => void;
+    electronIpcRemoveAllListeners: (channel: string) => void;
   }
