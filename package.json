@@ -11,9 +11,10 @@
     "build:prod:preload": "webpack --config ./src/preload/webpack.js --mode production",
     "build:dev:all": "npm run build:dev:renderer && npm run build:dev:main && npm run build:dev:preload",
     "build:prod:all": "npm run build:prod:renderer && npm run build:prod:main && npm run build:prod:preload",
-
+    "update:angular": "ng update @angular/cli @angular/core",
+    "update:electron": "npm update electron electron-packager",
+    "update:webpack": "npm update webpack webpack-cli",
     "start": "electron .",
-
     "ng": "ng",
     "build": "ng build",
     "test": "ng test",
@@ -44,6 +45,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "electron": "^5.0.7",
+    "electron-packager": "^14.0.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
