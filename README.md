@@ -4,13 +4,11 @@ This template provides a starting point of a modern Electron app.
 
 ## Project gloals
 
-Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity.
+Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity. Use the [Angular CLI](https://cli.angular.io/) to generate components, routes, services and pipes.
 
 Use [TypeScript](https://www.typescriptlang.org/) for getting type checking.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the *node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
-
-[Keep it simple stupid](https://en.wikipedia.org/wiki/KISS_principle)
 
 ## Getting started
 
@@ -61,8 +59,12 @@ First be sure to have build everything:
 
 Now set some breakpoints both in the main source code and in the renderer source code.
 
-From Code press Ctrl+Shift+D and select **Main + Renderer** and press F5
+From Code press **Ctrl+Shift+D** and select **Main + Renderer** and press **F5**
 
-## Packeging
+## Packaging into a app
 
-TODO
+This is where all the magic happens.
+
+`npm run release`
+
+Then your app will be put into the *release-builds* folder. Can build apps for Windows, macOS and Linux.
