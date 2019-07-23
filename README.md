@@ -9,9 +9,13 @@ TODO
 ## Getting started
 
 `git clone https://github.com/frederiksen/angular-electron-boilerplate`
+
 `cd angular-electron-boilerplate`
+
 `npm install`
+
 `npm run build:dev:all`
+
 `npm start`
 
 ## NPM scripts
