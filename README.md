@@ -4,11 +4,13 @@ This template provides a starting point of a modern Electron app.
 
 ## Project gloals
 
-Use [Angular](https://angular.io/) for the Electron renderer, ....
+Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity.
 
-Use [TypeScript](https://www.typescriptlang.org/) ...
+Use [TypeScript](https://www.typescriptlang.org/) for getting type checking.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the *node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
+
+[Keep it simple stupid](https://en.wikipedia.org/wiki/KISS_principle)
 
 ## Getting started
 
