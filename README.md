@@ -10,8 +10,6 @@ Use [TypeScript](https://www.typescriptlang.org/) for getting type checking.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the *node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
-[Keep it simple stupid](https://en.wikipedia.org/wiki/KISS_principle)
-
 ## Getting started
 
 `git clone https://github.com/frederiksen/angular-electron-boilerplate`
@@ -61,7 +59,7 @@ First be sure to have build everything:
 
 Now set some breakpoints both in the main source code and in the renderer source code.
 
-From Code press Ctrl+Shift+D and select **Main + Renderer** and press F5
+From Code press **Ctrl+Shift+D** and select **Main + Renderer** and press **F5**
 
 ## Packaging into a app
 
