@@ -63,6 +63,10 @@ Now set some breakpoints both in the main source code and in the renderer source
 
 From Code press Ctrl+Shift+D and select **Main + Renderer** and press F5
 
-## Packeging
+## Packaging into a app
 
-TODO
+This is where all the magic happens.
+
+`npm run build:dev:all`
+
+Then your app will be put into the *release-builds* folder.
