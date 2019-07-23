@@ -41,9 +41,9 @@ TODO
 
 | Command | Description |
 | --- | --- |
-| `npm run build:update:angular` | Update to latest stable Angular |
-| `npm run build:update:electron` | Update to latest stable Electron |
-| `npm run build:update:webpack` | Update to latest stable WebPack |
+| `npm run update:angular` | Easy update to latest stable Angular |
+| `npm run update:electron` | Easy update to latest stable Electron |
+| `npm run update:webpack` | Easy update to latest stable WebPack |
 
 ## Code scaffolding
 
