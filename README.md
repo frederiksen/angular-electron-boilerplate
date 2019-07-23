@@ -8,7 +8,7 @@ Use [Angular](https://angular.io/) for the Electron renderer, ....
 
 Use [TypeScript](https://www.typescriptlang.org/) ...
 
-Use [webpack](https://webpack.js.org/)
+Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the *node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
 ## Getting started
 
