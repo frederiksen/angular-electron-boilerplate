@@ -12,6 +12,29 @@
             "sourceMaps": true,            
             "webRoot": "${workspaceFolder}/src/renderer",
             "timeout": 10000            
+        },
+        {
+            "name": "Main",
+            "type": "node",
+            "request": "launch",
+            "protocol": "inspector",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+            "runtimeArgs": [
+              "--remote-debugging-port=9222",
+              "."
+            ],
+            "windows": {
+              "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+            } 
         }
-    ]
+    ],
+    "compounds": [
+        {
+          "name": "Main + Renderer",
+          "configurations": [
+            "Main",
+            "Renderer"
+          ]
+        }
+      ]
 }
