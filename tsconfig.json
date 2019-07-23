@@ -10,7 +10,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es5", // https://github.com/electron/electron/issues/12011
     "typeRoots": [
       "node_modules/@types"
     ],
