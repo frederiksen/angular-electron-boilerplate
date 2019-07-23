@@ -2,9 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
-## Development server
+## NPM scripts
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Builds
+
+| Command | Description |
+| --- | --- |
+| `npm run build:dev:all` | Developer build of all projects |
+| `npm run build:prod:all` | Production build of all projects |
+| `npm run build:dev:main` | Developer build of the *Electron main* project |
+| `npm run build:prod:main` | Production build of the *Electron main* project |
+| `npm run build:dev:renderer` | Developer build of the *Electron renderer* project |
+| `npm run build:prod:renderer` | Production build of the *Electron renderer* project |
+| `npm run build:dev:reload` | Developer build of the *reload* project |
+| `npm run build:prod:reload` | Production build of the *reload* project |
 
 ## Code scaffolding
 
