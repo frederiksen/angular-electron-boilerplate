@@ -51,5 +51,14 @@ TODO
 
 ## Debugging
 
-Code
+Use [Code](https://code.visualstudio.com/) to get a super debug environment.
+
+First be sure to have build everything:
+
+`npm run build:dev:all`
+
+Now set some breakpoints both in the main source code and in the renderer source code.
+
+From Code press Ctrl+Shift+D and select **Main + Renderer** and press F5
+
 
