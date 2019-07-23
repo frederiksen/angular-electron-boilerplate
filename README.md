@@ -1,6 +1,18 @@
-# AngularElectronBoilerplate
+# angular-electron-boilerplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+
+## Project gloals
+
+TODO
+
+## Getting started
+
+`git clone https://github.com/frederiksen/angular-electron-boilerplate`
+`cd angular-electron-boilerplate`
+`npm install`
+`npm run build:dev:all`
+`npm start`
 
 ## NPM scripts
 
@@ -8,14 +20,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 | Command | Description |
 | --- | --- |
-| `npm run build:dev:all` | Developer build of all projects |
-| `npm run build:prod:all` | Production build of all projects |
+| `npm run build:dev:all` | Developer builds of all projects |
+| `npm run build:prod:all` | Production builds of all projects |
 | `npm run build:dev:main` | Developer build of the *Electron main* project |
 | `npm run build:prod:main` | Production build of the *Electron main* project |
 | `npm run build:dev:renderer` | Developer build of the *Electron renderer* project |
 | `npm run build:prod:renderer` | Production build of the *Electron renderer* project |
-| `npm run build:dev:reload` | Developer build of the *reload* project |
-| `npm run build:prod:reload` | Production build of the *reload* project |
+| `npm run build:dev:preload` | Developer build of the *Electron preload* project |
+| `npm run build:prod:preload` | Production build of the *Electronpreload* project |
+
+### Tests
+
+TODO
+
+### Updates
+
+TODO
 
 ## Code scaffolding
 
