@@ -16,12 +16,10 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      // Disabled nodeIntegration
+      // Disabled Node integration
       nodeIntegration: false,
       // In a sandbox
       sandbox: true,
-      // JavaScript context isolation for preload scripts
-      contextIsolation: true,
       // Preload script
       preload: path.join(app.getAppPath(), 'dist/main', 'preload.js')
     }

@@ -11,7 +11,8 @@
       "experimentalDecorators": true,
       "target": "es5",
       "types": [
-        "node"
+        "node",
+        "../window-interface"
       ],      
       "typeRoots": [
         "node_modules/@types"
