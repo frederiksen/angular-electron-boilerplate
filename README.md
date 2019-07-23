@@ -67,6 +67,6 @@ From Code press Ctrl+Shift+D and select **Main + Renderer** and press F5
 
 This is where all the magic happens.
 
-`npm run build:dev:all`
+`npm run release`
 
 Then your app will be put into the *release-builds* folder.
