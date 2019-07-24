@@ -3,7 +3,7 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-Soon to come... Windows, macOS & Linux
+![Windows](https://drive.google.com/file/d/1TVmuGdbntkCbv50fkPOa0AANtQmOJU5Z)
 
 ## Project gloals
 
