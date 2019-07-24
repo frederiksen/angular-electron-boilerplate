@@ -12,6 +12,9 @@ import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
     </div>
     <h2>Here are some links to help you start: </h2>
     <button (click)="onClickMe()">Click me!</button>
+    <h3>{{os}}</h3>
+    <h3>{{mem}}</h3>
+
     <router-outlet></router-outlet>
   `,
   styles: []
@@ -19,17 +22,20 @@ import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
 export class AppComponent {
   title = 'renderer';
 
+  os = '-';
+  mem = 0;
+
   constructor() {
     window.electronIpcOn('test', (event: any, arg: any) => {
+      console.log('got an electron ipc event');
       const systemInfo = DtoSystemInfo.deserialize(arg);
-      alert('System info: ' + systemInfo.Os + ' mem: ' + systemInfo.Mem);
+      this.os = systemInfo.Os;
+      this.mem = systemInfo.Mem;
     });
   }
 
   onClickMe(): void {
-    console.log('test1');
-    console.log('test2');
-    console.log('test3');
+    console.log('button clicked');
     window.electronIpcSend('app-quit');
   }
 
