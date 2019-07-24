@@ -3,7 +3,9 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-![Windows](https://photos.app.goo.gl/TinhgiPr7JVfMEKDA)
+TODO Windows
+TODO macOS
+TODO Linux
 
 ## Project gloals
 
