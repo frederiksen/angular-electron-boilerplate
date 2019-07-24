@@ -45,10 +45,10 @@ Start watching for source code changes, and builds after each source code change
 
 | Command | Description |
 | --- | --- |
-| `npm run watch:all` | Watch all projects |
-| `npm run watch:main` | Watch the *Electron main* project |
-| `npm run watch:renderer` | Watch the *Electron renderer* project |
-| `npm run watch:preload` | Watch the *Electron preload* project |
+| `npm run build:watch:all` | Watch all projects |
+| `npm run build:watch:main` | Watch the *Electron main* project |
+| `npm run build:watch:renderer` | Watch the *Electron renderer* project |
+| `npm run build:watch:preload` | Watch the *Electron preload* project |
 
 ### Tests
 
