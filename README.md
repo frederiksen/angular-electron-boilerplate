@@ -26,6 +26,8 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 ### Builds
 
+This builds a project and places the output in the */dist* folder.
+
 | Command | Description |
 | --- | --- |
 | `npm run build:dev:all` | Developer builds of all projects |
@@ -37,11 +39,30 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 | `npm run build:dev:preload` | Developer build of the *Electron preload* project |
 | `npm run build:prod:preload` | Production build of the *Electronpreload* project |
 
+### Watch
+
+Start watching for source code changes, and builds after each source code change.
+
+| Command | Description |
+| --- | --- |
+| `npm run watch:all` | Watch all projects |
+| `npm run watch:main` | Watch the *Electron main* project |
+| `npm run watch:renderer` | Watch the *Electron renderer* project |
+| `npm run watch:preload` | Watch the *Electron preload* project |
+
 ### Tests
 
-TODO
+Test commands.
+
+| Command | Description |
+| --- | --- |
+| `npm run test:test` | Executes all Angular unit-tests |
+| `npm run test:e2e` | Executes Angular end-2-end tests |
+| `npm run test:lint` | Angular lint |
 
 ### Updates
+
+Commands for updating NPM modules.
 
 | Command | Description |
 | --- | --- |
