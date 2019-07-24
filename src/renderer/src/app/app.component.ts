@@ -7,7 +7,7 @@ import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'renderer';
+  title = 'angular-electron-boilerplate';
   constructor() {
   }
 }
