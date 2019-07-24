@@ -72,6 +72,8 @@ Commands for updating NPM modules.
 
 ## Debugging
 
+![Code](https://upload.wikimedia.org/wikipedia/en/e/e9/VS_Code_%28Insiders%29.png)
+
 Use [Code](https://code.visualstudio.com/) to get a super debug environment.
 
 First be sure to have build everything:
