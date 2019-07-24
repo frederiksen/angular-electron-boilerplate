@@ -74,8 +74,8 @@ Commands for updating NPM modules.
 
 | Command | Description |
 | --- | --- |
-| `npm run package` | Package current */dist* folder into an app |
-| `npm run release` | First build a production build, then package */dist* folder into an app |
+| `npm run package` | Package current */dist* folder into an app in the *release-builds* folder |
+| `npm run release` | First build a production build, then package */dist* folder into an app in the *release-builds* folder |
 
 ## Debugging
 
