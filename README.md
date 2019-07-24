@@ -76,6 +76,8 @@ Commands for updating NPM modules.
 
 Use [Code](https://code.visualstudio.com/) to get a super debug environment.
 
+This extension is needed: [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
 First be sure to have build everything:
 
 `npm run build:dev:all`
