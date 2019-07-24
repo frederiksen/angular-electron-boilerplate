@@ -74,8 +74,8 @@ Commands for updating NPM modules.
 
 | Command | Description |
 | --- | --- |
-| `npm run package` | Package current */dist* folder into an app in the *release-builds* folder |
-| `npm run release` | First build a production build, then package */dist* folder into an app in the *release-builds* folder |
+| `npm run package` | Package current */dist* folder into an app in the */release-builds* folder |
+| `npm run release` | First build a production build, then package */dist* folder into an app in the */release-builds* folder |
 
 ## Debugging
 
@@ -99,4 +99,4 @@ This is where all the magic happens.
 
 `npm run release`
 
-Then your app will be put into the *release-builds* folder. Can build apps for Windows, macOS and Linux.
+Then your app will be put into the */release-builds* folder. Can build apps for Windows, macOS and Linux.
