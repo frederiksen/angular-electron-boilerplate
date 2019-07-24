@@ -3,7 +3,7 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-![Windows](https://file.io/GF0QKL)
+![Windows 10](https://file.io/GF0QKL)
 
 ## Project gloals
 
