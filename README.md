@@ -2,6 +2,11 @@
 
 This template provides a starting point of a modern Electron app.
 
+## Screenshots
+TODO Windows
+TODO macOS
+TODO Linux
+
 ## Project gloals
 
 Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity. Use the [Angular CLI](https://cli.angular.io/) to generate components, routes, services and pipes.
