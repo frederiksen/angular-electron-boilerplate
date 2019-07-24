@@ -29,6 +29,10 @@ export class AppComponent {
     window.electronIpcOn('test', (event: any, arg: any) => {
       console.log('got an electron ipc event');
       const systemInfo = DtoSystemInfo.deserialize(arg);
+
+      console.log(systemInfo.Os);
+      console.log(systemInfo.Mem);
+
       this.os = systemInfo.Os;
       this.mem = systemInfo.Mem;
     });
