@@ -1,6 +1,8 @@
 export class DtoSystemInfo {
-    public Os: string;
-    public Mem: number;
+    public Arch: string;
+    public Hostname: string;
+    public Platform: string;
+    public Release: string;
 
     public static deserialize(jsonString: string): DtoSystemInfo {
         const dto: DtoSystemInfo = JSON.parse(jsonString);

@@ -1,9 +1,8 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
 import { DtoSystemInfo } from '../ipc-dtos/dtosysteminfo';
-//import { si } from 'systeminformation';
-const si = require('systeminformation');
-
+// import os from 'os';
+const os = require('os');
 
 let win: BrowserWindow;
 
@@ -29,6 +28,8 @@ function createWindow() {
     }
   });
 
+  win.setMenuBarVisibility(false);
+
   win.loadFile(path.join(app.getAppPath(), 'dist/renderer', 'index.html'));
 
   win.on('closed', () => {
@@ -36,18 +37,16 @@ function createWindow() {
   });
 }
 
-ipcMain.on('app-quit', (event, arg) => {
-//  app.quit();
+ipcMain.on('dev-tools', () => {
+  win.webContents.toggleDevTools();
+});
 
-
-      si.cpu().then(data => {
-        console.log(data);
-
-        const systemInfo = new DtoSystemInfo();
-        systemInfo.Os = data.brand;
-        systemInfo.Mem = data.physicalCores;
-        win.webContents.send('test', systemInfo.serialize());
-      })
-    .catch(error => console.error(error));
-
+ipcMain.on('request-systeminfo', () => {
+  const systemInfo = new DtoSystemInfo();
+  systemInfo.Arch = os.arch();
+  systemInfo.Hostname = os.hostname();
+  systemInfo.Platform = os.platform();
+  systemInfo.Release = os.release();
+  const serializedString = systemInfo.serialize();
+  win.webContents.send('systeminfo', serializedString);
 });

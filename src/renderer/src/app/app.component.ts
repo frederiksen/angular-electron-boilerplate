@@ -8,6 +8,11 @@ import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
 })
 export class AppComponent {
   title = 'angular-electron-boilerplate';
+
   constructor() {
+  }
+
+  clickDevTools() {
+    window.electronIpcSend('dev-tools');
   }
 }
