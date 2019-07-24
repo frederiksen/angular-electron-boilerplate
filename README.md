@@ -3,19 +3,19 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-TODO Windows
-TODO macOS
-TODO Linux
+Soon to come... Windows, macOS & Linux
 
 ## Project gloals
 
-Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity. Use the [Angular CLI](https://cli.angular.io/) to generate components, routes, services and pipes.
+Use [Angular](https://angular.io/) for the Electron renderer process. Using a modern frontend framework helps you organize your codebase once your Electron app grows in complexity. Use the [Angular CLI](https://cli.angular.io/) to generate components, routes, services and pipes. To give a modern look-and-feel [Angular Material](https://material.angular.io/) is used. This can easily be removed if it is not needed.
 
 Use [TypeScript](https://www.typescriptlang.org/) for strongly-typed JavaScript.
 
-Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the *node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
+Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the */node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
 ## Getting started
+
+In just a few minutes you have build an app using this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
 
 `git clone https://github.com/frederiksen/angular-electron-boilerplate`
 
