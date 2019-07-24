@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,9 @@ export class AppComponent {
   title = 'renderer';
 
   constructor() {
-    window.electronIpcOn('test', () => {
-      alert('ok');
+    window.electronIpcOn('test', (event: any, arg: any) => {
+      const systemInfo = DtoSystemInfo.deserialize(arg);
+      alert('System info: ' + systemInfo.Os + ' mem: ' + systemInfo.Mem);
     });
   }
 

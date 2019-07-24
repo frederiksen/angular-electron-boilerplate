@@ -1,5 +1,6 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
+import { DtoSystemInfo } from '../ipc-dtos/dtosysteminfo';
 
 let win: BrowserWindow;
 
@@ -34,6 +35,10 @@ function createWindow() {
 
 ipcMain.on('app-quit', (event, arg) => {
 //  app.quit();
-  win.webContents.send('test');
 
+  const systemInfo = new DtoSystemInfo();
+  systemInfo.Os = 'Windows';
+  systemInfo.Mem = 1234;
+
+  win.webContents.send('test', systemInfo.serialize());
 });
