@@ -2,19 +2,19 @@ import { ipcRenderer } from 'electron';
 
 console.log('preload.js loaded');
 
-window.electronIpcSend = (channel: string, ...args: any[]) => {
-  ipcRenderer.send(channel, args);
+window.electronIpcSend = (channel: string, ...arg: any) => {
+  ipcRenderer.send(channel, arg);
 };
 
-window.electronIpcSendSync = (channel: string, ...args: any[]) => {
-  return ipcRenderer.sendSync(channel, args);
+window.electronIpcSendSync = (channel: string, ...arg: any) => {
+  return ipcRenderer.sendSync(channel, arg);
 };
 
-window.electronIpcOn = (channel: string, listener: (event: any, ...args: any[]) => void) => {
+window.electronIpcOn = (channel: string, listener: (event: any, ...arg: any) => void) => {
   ipcRenderer.on(channel, listener);
 };
 
-window.electronIpcRemoveListener = (channel: string, listener: (event: any, ...args: any[]) => void) => {
+window.electronIpcRemoveListener = (channel: string, listener: (event: any, ...arg: any) => void) => {
   ipcRenderer.removeListener(channel, listener);
 };
 

@@ -1,7 +1,7 @@
 interface Window {
-    electronIpcSend: (channel: string, ...args: any[]) => void;
-    electronIpcSendSync: (channel: string, ...args: any[]) => any;
-    electronIpcOn: (channel: string, listener: (event: any, ...args: any[]) => void) => void;
-    electronIpcRemoveListener: (channel: string, listener: (event: any, ...args: any[]) => void) => void;
+    electronIpcSend: (channel: string, ...arg: any) => void;
+    electronIpcSendSync: (channel: string, ...arg: any) => any;
+    electronIpcOn: (channel: string, listener: (event: any, ...arg: any) => void) => void;
+    electronIpcRemoveListener: (channel: string, listener: (event: any, arg: any) => void) => void;
     electronIpcRemoveAllListeners: (channel: string) => void;
   }
