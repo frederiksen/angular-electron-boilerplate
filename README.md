@@ -70,6 +70,13 @@ Commands for updating NPM modules.
 | `npm run update:electron` | Easy update to latest stable Electron |
 | `npm run update:webpack` | Easy update to latest stable WebPack |
 
+### Packaging
+
+| Command | Description |
+| --- | --- |
+| `npm run package` | Package current */dist* folder into an app |
+| `npm run release` | First build a production build, then package */dist* folder into an app |
+
 ## Debugging
 
 ![Code](https://upload.wikimedia.org/wikipedia/en/e/e9/VS_Code_%28Insiders%29.png)
