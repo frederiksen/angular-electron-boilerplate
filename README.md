@@ -91,7 +91,7 @@ This extension is needed: [Debugger for Chrome](https://marketplace.visualstudio
 First be sure to have build everything:
 
 ```bash
-npm run build:dev:all
+$ npm run build:dev:all
 ```
 
 Now set some breakpoints both in the main source code and in the renderer source code.
@@ -103,7 +103,7 @@ From Code press **Ctrl+Shift+D** and select **Main + Renderer** and press **F5**
 This is where all the magic happens.
 
 ```bash
-npm run release
+$ npm run release
 ```
 
 Then your app will be put into the */release-builds* folder. Can build apps for Windows, macOS and Linux.
