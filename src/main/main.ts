@@ -28,7 +28,6 @@ function createWindow() {
   });
 
   win.setMenuBarVisibility(false);
-
   win.loadFile(path.join(app.getAppPath(), 'dist/renderer', 'index.html'));
 
   win.on('closed', () => {
@@ -37,7 +36,9 @@ function createWindow() {
 }
 
 ipcMain.on('dev-tools', () => {
-  win.webContents.toggleDevTools();
+  if (win) {
+    win.webContents.toggleDevTools();
+  }
 });
 
 ipcMain.on('request-systeminfo', () => {
@@ -47,5 +48,7 @@ ipcMain.on('request-systeminfo', () => {
   systemInfo.Platform = os.platform();
   systemInfo.Release = os.release();
   const serializedString = systemInfo.serialize();
-  win.webContents.send('systeminfo', serializedString);
+  if (win) {
+    win.webContents.send('systeminfo', serializedString);
+  }
 });
