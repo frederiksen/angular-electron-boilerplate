@@ -17,15 +17,13 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 In just a few minutes you have build an app using this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
 
-`git clone https://github.com/frederiksen/angular-electron-boilerplate`
-
-`cd angular-electron-boilerplate`
-
-`npm install`
-
-`npm run build:dev:all`
-
-`npm start`
+```bash
+$ git clone https://github.com/frederiksen/angular-electron-boilerplate
+$ cd angular-electron-boilerplate
+$ npm install
+$ npm run build:dev:all
+$ npm start
+```
 
 ## NPM scripts
 
@@ -92,7 +90,9 @@ This extension is needed: [Debugger for Chrome](https://marketplace.visualstudio
 
 First be sure to have build everything:
 
-`npm run build:dev:all`
+```bash
+npm run build:dev:all
+```
 
 Now set some breakpoints both in the main source code and in the renderer source code.
 
@@ -102,6 +102,8 @@ From Code press **Ctrl+Shift+D** and select **Main + Renderer** and press **F5**
 
 This is where all the magic happens.
 
-`npm run release`
+```bash
+npm run release
+```
 
 Then your app will be put into the */release-builds* folder. Can build apps for Windows, macOS and Linux.
