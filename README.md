@@ -15,7 +15,7 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 ## Getting started
 
-In just a few minutes you have build an app using this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/).
+Try out this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/):
 
 ```bash
 $ git clone https://github.com/frederiksen/angular-electron-boilerplate
