@@ -1,8 +1,7 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
 import { DtoSystemInfo } from '../ipc-dtos/dtosysteminfo';
-// import os from 'os';
-const os = require('os');
+import * as os from 'os';
 
 let win: BrowserWindow;
 
