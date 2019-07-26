@@ -15,7 +15,7 @@ export class Component1Component implements OnInit {
   constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
-    window.electronIpcOn('systeminfo', (event, arg) => {
+    window.electronIpcOnce('systeminfo', (event, arg) => {
       this.ngZone.run( () => {
         const systemInfo: DtoSystemInfo = DtoSystemInfo.deserialize(arg);
         this.arch = systemInfo.Arch;
