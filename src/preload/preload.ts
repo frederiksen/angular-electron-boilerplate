@@ -14,6 +14,10 @@ window.electronIpcOn = (channel: string, listener: (event: any, ...arg: any) => 
   ipcRenderer.on(channel, listener);
 };
 
+window.electronIpcOnce = (channel: string, listener: (event: any, ...arg: any) => void) => {
+  ipcRenderer.once(channel, listener);
+};
+
 window.electronIpcRemoveListener = (channel: string, listener: (event: any, ...arg: any) => void) => {
   ipcRenderer.removeListener(channel, listener);
 };
