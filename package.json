@@ -22,7 +22,7 @@
     "test:test": "ng test",
     "test:lint": "ng lint",
     "test:e2e": "ng e2e",
-    "package": "electron-packager . angular-electron-boilerplate --asar --overwrite --prune=true --ignore=\"/node_modules|/src|.map\" --out=release-builds",
+    "package": "electron-packager . angular-electron-boilerplate --asar --overwrite --prune=true --ignore=\"/node_modules|/src|.vscode|.editorconfig|.gitignore|.map|angular.json|tslint.json|README.md|package-lock.json|LICENSE\" --out=release-builds",
     "release": "npm run build:prod:all  && npm run package"
   },
   "private": true,
