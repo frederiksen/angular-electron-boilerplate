@@ -11,6 +11,9 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5", // https://github.com/electron/electron/issues/12011
+    "types": [
+      "../window-interface"      
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],
