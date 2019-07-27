@@ -8,6 +8,7 @@
             "name": "Renderer",
             "type": "chrome",
             "request": "attach",
+            "trace": "verbose", // this helps to debug if breakpoints is not hit during debugging, look at the 'debug console' output
             "port": 9222,
             "sourceMaps": true,            
             "webRoot": "${workspaceFolder}/src/renderer",
