@@ -8,7 +8,7 @@ module.exports = env => {
     },
     target: "electron-preload",
     output: {
-      path: path.resolve(__dirname, '../../dist/main'),
+      path: path.resolve(__dirname, '../../dist/preload'),
       filename: 'preload.js'
     },
     externals: [ ],
