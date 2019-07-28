@@ -23,7 +23,7 @@ function createWindow() {
       // In a sandbox
       sandbox: true,
       // Preload script
-//      preload: path.join(app.getAppPath(), 'dist/main', 'preload.js')
+      preload: path.join(app.getAppPath(), 'dist/main', 'preload.js')
     }
   });
 
