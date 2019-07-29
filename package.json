@@ -27,7 +27,8 @@
     "release": "npm run build:prod:all  && npm run package"
   },
   "private": true,
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@angular/animations": "~8.1.2",
     "@angular/cdk": "^8.1.1",
     "@angular/common": "~8.1.2",
@@ -39,9 +40,7 @@
     "@angular/router": "~8.1.2",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
+    "zone.js": "~0.9.1",
     "@angular-devkit/build-angular": "~0.801.2",
     "@angular/cli": "~8.1.2",
     "@angular/compiler-cli": "~8.1.2",
