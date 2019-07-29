@@ -40,7 +40,7 @@ This builds a project and places the output in the */dist* folder.
 | `npm run build:dev:renderer` | Developer build of the *Electron renderer* project |
 | `npm run build:prod:renderer` | Production build of the *Electron renderer* project |
 | `npm run build:dev:preload` | Developer build of the *Electron preload* project |
-| `npm run build:prod:preload` | Production build of the *Electronpreload* project |
+| `npm run build:prod:preload` | Production build of the *Electron preload* project |
 
 ### Watch
 
@@ -82,7 +82,7 @@ Commands for updating NPM modules.
 
 ## Debugging
 
-![Code](https://upload.wikimedia.org/wikipedia/en/e/e9/VS_Code_%28Insiders%29.png)
+![Code](https://file.io/sXJqK7)
 
 Use [Code](https://code.visualstudio.com/) to get a super debug environment.
 
