@@ -98,7 +98,7 @@ Now set some breakpoints both in the main source code and in the renderer source
 
 From Code press **Ctrl+Shift+D** and select **Main + Renderer** and press **F5**
 
-## Packaging into a app
+## Packaging into an app
 
 This is where all the magic happens.
 
