@@ -3,7 +3,7 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-![Screenshots](https://file.io/yV3kuC)
+![Screenshots](https://file.io/DeSuQ1)
 
 ## Project gloals
 
