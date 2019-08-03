@@ -13,6 +13,10 @@ Use [TypeScript](https://www.typescriptlang.org/) for strongly-typed JavaScript.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the */node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
+## Dependencies
+
+[![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
+
 ## Getting started
 
 Try out this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/):
