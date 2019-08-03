@@ -15,9 +15,9 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 ## Dependencies
 
-[![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate//dev-status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
+[![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
 
-[![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate#info=devDependencies)
+[![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/dev-status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate?type=dev)
 
 ## Getting started
 
