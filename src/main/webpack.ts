@@ -1,18 +1,18 @@
-const path = require('path')
+import * as path from 'path';
 
 module.exports = env => {
-  if (!env) { env = "development" };
+  if (!env) { env = 'development'; }
   return {
     entry: {
-      main: "./src/main/main.ts"
+      main: './src/main/main.ts'
     },
-    target: "electron-main",
+    target: 'electron-main',
     output: {
       path: path.resolve(__dirname, '../../dist/main'),
       filename: 'electron-main.js'
     },
     externals: [ ],
-    devtool: "source-map",
+    devtool: 'source-map',
     module: {
       rules: [
         {
@@ -34,5 +34,5 @@ module.exports = env => {
     },
     plugins: [
     ]
-  }
-}
+  };
+};

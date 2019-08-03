@@ -1,18 +1,18 @@
-const path = require('path')
+import * as path from 'path';
 
 module.exports = env => {
-  if (!env) { env = "development" };
+  if (!env) { env = 'development'; }
   return {
     entry: {
-      main: "./src/preload/preload.ts"
+      main: './src/preload/preload.ts'
     },
-    target: "electron-preload",
+    target: 'electron-preload',
     output: {
       path: path.resolve(__dirname, '../../dist/preload'),
       filename: 'preload.js'
     },
     externals: [ ],
-    devtool: "source-map",
+    devtool: 'source-map',
     module: {
       rules: [
         {
@@ -34,5 +34,5 @@ module.exports = env => {
     },
     plugins: [
     ]
-  }
-}
+  };
+};
