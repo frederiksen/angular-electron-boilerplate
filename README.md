@@ -19,6 +19,8 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 [![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/dev-status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate?type=dev)
 
+All packages are specified under *devDependencies* since, due to the webpack usage, no modules in the *node_modules* folders are needed for production.
+
 ## Getting started
 
 Try out this [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/):
