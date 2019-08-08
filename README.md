@@ -19,7 +19,7 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 
 [![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/dev-status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate?type=dev)
 
-All packages are specified under *devDependencies* since, due to the webpack usage, no modules in the *node_modules* folders are needed for production.
+All packages are specified under *devDependencies* since, due to the webpack usage, no modules in the */node_modules* folders are needed for production.
 
 ## Getting started
 
