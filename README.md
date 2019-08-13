@@ -90,7 +90,7 @@ Commands for updating NPM modules.
 
 ## Debugging
 
-![Code](https://file.io/sXJqK7)
+![Code](https://drive.google.com/uc?export=view&id=1etTpNUSFkyIm6245BNgXIDH1L0mmPGhI)
 
 Use [Code](https://code.visualstudio.com/) to get a super debug environment.
 
