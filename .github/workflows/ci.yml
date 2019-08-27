@@ -9,14 +9,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v1
     - name: OS test
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 10.x
     - name: npm install, release
       run: |
         npm install
