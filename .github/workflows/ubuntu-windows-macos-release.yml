@@ -1,19 +1,19 @@
-name: Ubuntu CI
+name: Ubuntu, Windows, macOS CI
 
 on: [push]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
         node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: OS: ${{ matrix.os }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
