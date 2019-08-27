@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: OS: ???
+    - name: OS test
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
