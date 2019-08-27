@@ -13,6 +13,9 @@ Use [TypeScript](https://www.typescriptlang.org/) for strongly-typed JavaScript.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the */node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
+## CI
+![CI](https://github.com/frederiksen/angular-electron-boilerplate/workflows/CI/badge.svg)
+
 ## Dependencies
 
 [![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
