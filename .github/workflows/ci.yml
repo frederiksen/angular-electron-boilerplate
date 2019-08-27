@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: OS test
+    - name: Setup...
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
