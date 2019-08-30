@@ -24,7 +24,7 @@ jobs:
         npm run release
     - uses: actions/upload-artifact@v1.0.0
       with:
-        name: artifact
+        name: drop-${{ matrix.os }}
         path: 'release-builds'
       env:
         CI: true
