@@ -20,5 +20,9 @@ jobs:
       run: |
         npm install
         npm run release
+    - uses: actions/upload-artifact@master
+      with:
+        name: artifact
+        path: release-builds
       env:
         CI: true
