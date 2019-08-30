@@ -23,6 +23,6 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: artifact
-        path: '../release-builds'
+        path: './*'
       env:
         CI: true
