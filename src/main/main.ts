@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron';
+import { app, BrowserWindow, ipcMain, Menu } from 'electron';
 import * as path from 'path';
 import { DtoSystemInfo } from '../ipc-dtos/dtosysteminfo';
 import * as os from 'os';
@@ -27,7 +27,9 @@ function createWindow() {
     }
   });
 
-  win.setMenuBarVisibility(false);
+  // https://stackoverflow.com/a/58548866/600559
+  Menu.setApplicationMenu(null);
+
   win.loadFile(path.join(app.getAppPath(), 'dist/renderer', 'index.html'));
 
   win.on('closed', () => {
