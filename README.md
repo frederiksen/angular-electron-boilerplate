@@ -16,6 +16,8 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 ## CI
 ![CI](https://github.com/frederiksen/angular-electron-boilerplate/workflows/CI/badge.svg)
 
+[Builds](https://github.com/frederiksen/angular-electron-boilerplate/actions)
+
 ## Dependencies
 
 [![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
