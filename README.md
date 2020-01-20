@@ -16,6 +16,8 @@ Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce s
 ## CI
 ![CI](https://github.com/frederiksen/angular-electron-boilerplate/workflows/CI/badge.svg)
 
+[Builds](https://github.com/frederiksen/angular-electron-boilerplate/actions)
+
 ## Dependencies
 
 [![Dependency Status](https://david-dm.org/frederiksen/angular-electron-boilerplate/status.svg)](https://david-dm.org/frederiksen/angular-electron-boilerplate)
@@ -117,4 +119,4 @@ This is where all the magic happens.
 $ npm run release
 ```
 
-Then your app will be put into the */release-builds* folder. Can build apps for Windows, macOS and Linux.
+Then your app will be put into the */release-builds* folder. Can build an app for Windows, macOS and Linux.
