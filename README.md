@@ -119,4 +119,4 @@ This is where all the magic happens.
 $ npm run release
 ```
 
-Then your app will be put into the */release-builds* folder. Can build apps for Windows, macOS and Linux.
+Then your app will be put into the */release-builds* folder. Can build an app for Windows, macOS and Linux.
