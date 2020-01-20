@@ -3,7 +3,7 @@
 This template provides a starting point of a modern Electron app.
 
 ## Screenshots
-![Screenshots](https://drive.google.com/uc?export=view&id=1EvyGUGCjUAxCl7TQjhw2_CswrXOUlCDf)
+![Screenshots](/images/modern-electron-screenshots.png)
 
 ## Project gloals
 
@@ -95,7 +95,7 @@ Commands for updating NPM modules.
 
 ## Debugging
 
-![Code](https://drive.google.com/uc?export=view&id=1etTpNUSFkyIm6245BNgXIDH1L0mmPGhI)
+![Screenshots](/images/debug-electron-main-renderer.PNG)
 
 Use [Code](https://code.visualstudio.com/) to get a super debug environment.
 
