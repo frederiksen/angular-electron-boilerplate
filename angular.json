@@ -23,7 +23,7 @@
             "main": "src/renderer/src/main.ts",
             "polyfills": "src/renderer/src/polyfills.ts",
             "tsConfig": "src/renderer/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/renderer/src/assets"
             ],
@@ -46,7 +46,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": false,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -55,6 +54,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
