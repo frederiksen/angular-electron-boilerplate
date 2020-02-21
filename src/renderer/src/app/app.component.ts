@@ -13,6 +13,6 @@ export class AppComponent {
   }
 
   clickDevTools() {
-    window.electronIpcSend('dev-tools');
+    window.api.electronIpcSend('dev-tools');
   }
 }

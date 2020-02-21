@@ -15,7 +15,7 @@ export class Component1Component implements OnInit {
   constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
-    window.electronIpcOnce('systeminfo', (event, arg) => {
+    window.api.electronIpcOnce('systeminfo', (event, arg) => {
       this.ngZone.run( () => {
         const systemInfo: DtoSystemInfo = DtoSystemInfo.deserialize(arg);
         this.arch = systemInfo.Arch;
@@ -24,6 +24,6 @@ export class Component1Component implements OnInit {
         this.release = systemInfo.Release;
        });
     });
-    window.electronIpcSend('request-systeminfo');
+    window.api.electronIpcSend('request-systeminfo');
   }
 }
