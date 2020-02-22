@@ -1,6 +1,6 @@
 # angular-electron-boilerplate
 
-This template provides a starting point of a modern Electron app.
+This template provides a starting point of a modern and secure Electron app.
 
 ## Screenshots
 ![Screenshots](/images/modern-electron-screenshots.png)
