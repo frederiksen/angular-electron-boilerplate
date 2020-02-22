@@ -65,8 +65,8 @@
     "tslib": "^1.10.0",
     "tslint": "^6.0.0",
     "typescript": "~3.7.5",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
     "zone.js": "~0.10.2"
   }
 }
