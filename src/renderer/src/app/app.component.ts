@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
+import { IpcService } from './ipc.service';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,10 @@ import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
 export class AppComponent {
   title = 'angular-electron-boilerplate';
 
-  constructor() {
+  constructor(private ipcService: IpcService) {
   }
 
   clickDevTools() {
-    window.api.electronIpcSend('dev-tools');
+    this.ipcService.openDevTools();
   }
 }

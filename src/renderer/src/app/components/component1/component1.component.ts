@@ -1,5 +1,5 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-import { DtoSystemInfo } from '../../../../../ipc-dtos/dtosysteminfo';
+import { IpcService } from 'src/app/ipc.service';
 
 @Component({
   selector: 'app-component1',
@@ -12,18 +12,17 @@ export class Component1Component implements OnInit {
   platform = '-';
   release = '-';
 
-  constructor(private ngZone: NgZone) { }
+  constructor(private ipcService: IpcService, private ngZone: NgZone) { }
 
   ngOnInit() {
-    window.api.electronIpcOnce('systeminfo', (event, arg) => {
-      this.ngZone.run( () => {
-        const systemInfo: DtoSystemInfo = DtoSystemInfo.deserialize(arg);
-        this.arch = systemInfo.Arch;
-        this.hostname = systemInfo.Hostname;
-        this.platform = systemInfo.Platform;
-        this.release = systemInfo.Release;
-       });
-    });
-    window.api.electronIpcSend('request-systeminfo');
+    this.ipcService.getSystemInfoAsync()
+      .then(systemInfo => {
+        this.ngZone.run(() => {
+          this.arch = systemInfo.Arch;
+          this.hostname = systemInfo.Hostname;
+          this.platform = systemInfo.Platform;
+          this.release = systemInfo.Release;
+          });
+      });
   }
 }
