@@ -13,7 +13,7 @@ Use [TypeScript](https://www.typescriptlang.org/) for strongly-typed JavaScript.
 
 Use [webpack](https://webpack.js.org/) to pack *main* and *preload* to produce small fast build output. Everything is packed, so no need to include the */node_modules* folder, in order to remove unnessesary files and to produce small and fast builds.
 
-Use most secure Electron security settings: sandbox, contextIsolation and disabled nodeIntegration and enableRemoteModule. preload uses the contextBridge.
+Use most secure Electron security settings: contextIsolation and disabled nodeIntegration and disabled enableRemoteModule. preload uses the contextBridge.
 
 ## CI
 ![CI](https://github.com/frederiksen/angular-electron-boilerplate/workflows/CI/badge.svg)
