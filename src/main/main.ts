@@ -20,8 +20,6 @@ function createWindow() {
     webPreferences: {
       // Disabled Node integration
       nodeIntegration: false,
-      // In a sandbox
-      sandbox: true,
       // protect against prototype pollution
       contextIsolation: true,
       // turn off remote
