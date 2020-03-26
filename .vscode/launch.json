@@ -14,7 +14,7 @@
             "webRoot": "${workspaceFolder}",
             "timeout": 10000,
             "sourceMapPathOverrides": {
-              "./*": "${workspaceRoot}/src/renderer/*"
+              "webpack:///./*": "${workspaceRoot}/src/renderer/*"
             },            
         },
         {
