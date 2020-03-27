@@ -9,12 +9,12 @@
             "type": "chrome",
             "request": "attach",
             "trace": "verbose", // this helps to debug if breakpoints is not hit during debugging, look at the 'debug console' output
-            "port": 9222,
+            "port": 9876,
             "sourceMaps": true,            
             "webRoot": "${workspaceFolder}",
             "timeout": 10000,
             "sourceMapPathOverrides": {
-              "./*": "${workspaceRoot}/src/renderer/*"
+              "webpack:///./*": "${workspaceRoot}/src/renderer/*"
             },            
         },
         {
@@ -24,7 +24,7 @@
             "protocol": "inspector",
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
             "runtimeArgs": [
-              "--remote-debugging-port=9222",
+              "--remote-debugging-port=9876",
               "."
             ],
             "windows": {
