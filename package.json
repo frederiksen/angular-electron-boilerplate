@@ -45,7 +45,7 @@
     "@angular/router": "~9.1.0",
     "@types/jasmine": "^3.4.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
+    "@types/node": "^13.9.5",
     "@types/webpack": "^4.32.1",
     "codelyzer": "^5.1.2",
     "electron": "^8.0.1",
