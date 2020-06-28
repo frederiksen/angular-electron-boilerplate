@@ -5,7 +5,8 @@
     "types": [
       "jasmine",
       "../window-interface"      
-    ]
+    ],
+    "strict": true
   },
   "files": [
     "src/test.ts",

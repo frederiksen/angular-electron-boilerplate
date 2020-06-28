@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-module.exports = env => {
+module.exports = (env: string) => {
   if (!env) { env = 'development'; }
   return {
     entry: {

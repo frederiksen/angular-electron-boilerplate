@@ -3,7 +3,7 @@ import * as path from 'path';
 import { DtoSystemInfo } from '../ipc-dtos/dtosysteminfo';
 import * as os from 'os';
 
-let win: BrowserWindow;
+let win: BrowserWindow | null = null;
 
 app.on('ready', createWindow);
 
