@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DtoSystemInfo } from '../../../ipc-dtos/dtosysteminfo';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,12 @@ export class IpcService {
     window.api.electronIpcSend('dev-tools');
   }
 
-  getSystemInfoAsync(): Promise<DtoSystemInfo> {
-    return new Promise((resolve, reject) => {
+  getSystemInfoAsync(): Observable<DtoSystemInfo> {
+    return new Observable(subscriber => {
       window.api.electronIpcOnce('systeminfo', (event, arg) => {
         const systemInfo: DtoSystemInfo = DtoSystemInfo.deserialize(arg);
-        resolve(systemInfo);
+        subscriber.next(systemInfo);
+        subscriber.complete();
       });
       window.api.electronIpcSend('request-systeminfo');
     });

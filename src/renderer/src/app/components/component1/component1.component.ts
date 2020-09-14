@@ -16,13 +16,13 @@ export class Component1Component implements OnInit {
 
   ngOnInit() {
     this.ipcService.getSystemInfoAsync()
-      .then(systemInfo => {
+      .subscribe(systemInfo => {
         this.ngZone.run(() => {
           this.arch = systemInfo.Arch;
           this.hostname = systemInfo.Hostname;
           this.platform = systemInfo.Platform;
           this.release = systemInfo.Release;
-          });
+        });
       });
   }
 }
