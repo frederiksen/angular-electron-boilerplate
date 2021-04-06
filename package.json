@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "main": "./dist/main/electron-main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "npm run start:dev:hot-reloading:renderer+main",
+    "start:dev:hot-reloading:renderer+main": "npm run build:dev:preload && npm-run-all -p hot:dev:renderer hot:dev:main",
+    "start:dev:hot-reloading:renderer-only": "npm-run-all -p build:dev:preload build:dev:main && npm-run-all -p hot:dev:renderer hot:dev:main-no-restart",
+    "start:static": "electron .",
     "build:dev:renderer": "ng build",
     "build:prod:renderer": "ng build --prod",
     "build:dev:main": "webpack --config ./src/main/webpack.ts --mode development",
@@ -24,7 +27,10 @@
     "test:lint": "ng lint",
     "test:e2e": "ng e2e",
     "package": "electron-packager . angular-electron-boilerplate --asar --overwrite --prune=true --derefSymlinks=false --ignore=\"/node_modules|/src|.vscode|.editorconfig|.gitignore|.map|angular.json|tslint.json|README.md|package-lock.json|LICENSE\" --out=release-builds",
-    "release": "npm run build:prod:all  && npm run package"
+    "release": "npm run build:prod:all  && npm run package",
+    "hot:dev:renderer": "ng serve --watch & echo Renderer shutdown",
+    "hot:dev:main": "wait-on tcp:4200 && set WEBPACK_DEV_SERVER_URL=http://localhost:4200 && webpack --watch --config ./src/main/webpack.ts --mode development",
+    "hot:dev:main-no-restart": "wait-on tcp:4200 && set WEBPACK_DEV_SERVER_URL=http://localhost:4200 && electron . & kill-port --port 4200 >NUL"
   },
   "private": true,
   "dependencies": {},
@@ -57,6 +63,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "kill-port-process": "^2.3.0",
     "npm-run-all": "^4.1.5",
     "protractor": "~7.0.0",
     "rxjs": "~6.5.3",
@@ -65,8 +72,10 @@
     "tslib": "^2.0.0",
     "tslint": "~6.1.0",
     "typescript": "^3.9.5",
+    "wait-on": "^5.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
+    "webpack-electron-reload": "^1.0.1",
     "zone.js": "^0.11.1"
   }
 }

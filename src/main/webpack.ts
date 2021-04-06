@@ -1,5 +1,17 @@
 import * as path from 'path';
 
+// Add your plugins here
+let plugins: any = [];
+
+// Only require() this when we actually want to run Electron in dev mode
+// with hot-reloading.
+if (process.env.WEBPACK_DEV_SERVER_URL) {
+  const ElectronReloadPlugin = require("webpack-electron-reload")({
+    path: ".", // The directory where to watch for file changes
+  });
+  plugins.push(ElectronReloadPlugin());
+}
+
 module.exports = (env: string) => {
   if (!env) { env = 'development'; }
   return {
@@ -32,7 +44,6 @@ module.exports = (env: string) => {
       __dirname: true,
       __filename: true
     },
-    plugins: [
-    ]
+    plugins: plugins
   };
 };
