@@ -44,7 +44,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": false,
               "vendorChunk": false,
@@ -123,6 +122,5 @@
           }
         }
       }
-    }},
-  "defaultProject": "renderer"
+    }}
 }

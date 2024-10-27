@@ -6,7 +6,8 @@
   },
   "files": [
     "src/main.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    "../window-interface/index.d.ts"
   ],
   "include": [
     "src/**/*.d.ts"

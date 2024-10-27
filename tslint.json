@@ -4,6 +4,9 @@
     "codelyzer"
   ],
   "rules": {
+    "compiler-options": {
+      "no-explicit-any": false
+    },
     "align": {
       "options": [
         "parameters",
@@ -56,6 +59,7 @@
       "trace"
     ],
     "no-empty": false,
+
     "no-inferrable-types": [
       true,
       "ignore-params"
@@ -121,8 +125,8 @@
       ]
     },
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
-  ,    "variable-name": {
+    "use-pipe-transform-interface": true,
+    "variable-name": {
       "options": [
         "ban-keywords",
         "check-format",
