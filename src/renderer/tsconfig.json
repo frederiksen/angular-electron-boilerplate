@@ -10,16 +10,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es5", // https://github.com/electron/electron/issues/12011
-    "types": [
-      "../window-interface"      
-    ],
+    "target": "ESNext",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
-      "es2018",
+      "ESNext",
       "dom"
-    ]
-  }
+    ],
+  },
+  "include": [
+    "src/window-interface/index.d.ts"
+  ]
 }

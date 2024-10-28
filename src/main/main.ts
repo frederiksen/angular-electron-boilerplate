@@ -17,13 +17,12 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    resizable: true,
     webPreferences: {
       // Disabled Node integration
       nodeIntegration: false,
       // protect against prototype pollution
       contextIsolation: true,
-      // turn off remote
-      enableRemoteModule: false,
       // Preload script
       preload: path.join(app.getAppPath(), 'dist/preload', 'preload.js')
     }
